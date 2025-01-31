@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://bp32slkxrffuq"]
 
 [ext_resource type="Texture2D" uid="uid://bfarowhy2lrjp" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_kotij"]
-[ext_resource type="PackedScene" uid="uid://cdj7w3xay1wic" path="res://Scenes/Actors/CHAR-Knight.tscn" id="2_o4muo"]
+[ext_resource type="PackedScene" uid="uid://cdj7w3xay1wic" path="res://Scenes/Actors/CHAR_Knight.tscn" id="2_o4muo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkvkv"]
 texture = ExtResource("1_kotij")
@@ -183,6 +183,7 @@ shape = SubResource("WorldBoundaryShape2D_6cycw")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_o4muo")]
 position = Vector2(-1, -15)
+script = null
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(4, 4)
