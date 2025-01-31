@@ -181,9 +181,7 @@ tile_set = SubResource("TileSet_mgqfn")
 position = Vector2(0, 82)
 shape = SubResource("WorldBoundaryShape2D_6cycw")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_o4muo")]
-position = Vector2(-1, -15)
-script = null
+[node name="CHAR_Knight" parent="." instance=ExtResource("2_o4muo")]
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="CHAR_Knight"]
 zoom = Vector2(4, 4)
