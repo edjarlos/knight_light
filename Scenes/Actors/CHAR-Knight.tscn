@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cdj7w3xay1wic"]
 
-[ext_resource type="Script" path="res://Scripts/Char_Knight.cs" id="1_jfwal"]
 [ext_resource type="Texture2D" uid="uid://7epynjwagup3" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="1_kpa3g"]
+[ext_resource type="Script" path="res://Scenes/Actors/CharKnight.cs" id="1_r3w4f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jpnp"]
 atlas = ExtResource("1_kpa3g")
@@ -43,13 +43,13 @@ animations = [{
 radius = 6.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_jfwal")
+script = ExtResource("1_r3w4f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_e17rn")
 autoplay = "default"
-frame_progress = 0.809935
+frame_progress = 0.660707
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6)
